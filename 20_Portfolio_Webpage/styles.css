@@ -1,3 +1,31 @@
+
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(rgb(243,83,3),rgb(198,160,207));
+}
+
+img{
+    width: 550px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+img:hover{
+    width: 556px;
+    height: 306px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 #navbar{
     position:sticky;
     top: 0;
@@ -5,4 +33,11 @@
 
 #welcome-section{
  height: 100vh;   
+}
+
+@media (max-width: 650px) {
+    body{
+        display:flex;
+        flex-direction: column;
+    }
 }
